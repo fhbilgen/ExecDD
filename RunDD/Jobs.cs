@@ -10,16 +10,13 @@ namespace RunDD
     internal class AnalysisJobBase
     {
 
-        public Guid JobID { get; set; }
-        public DateTime CreationTime { get; set; }
-
-        public ApartmentState AptState { get; set; }
+       
         public string FileName { get; set; }
-        public string ReportFileName { get; set; }
-        public List<string> FileNames { get; set; }
+        public string ReportFileName { get;  set; }
+        //public List<string> FileNames { get; set; }
 
-        public string ComputerName { get; set; }
-        public byte[] ReportFileContent { get; set; }
+        //private string ComputerName { get; set; }
+        //public byte[] ReportFileContent { get; set; }
 
         public AnalysisJobBase()
         {
@@ -65,8 +62,8 @@ namespace RunDD
                 thread.Join();
             }
             catch (Exception ex)
-            {
-                Console.WriteLine(string.Format("ERROR : {0} ", Properties.Resource.EC200, ex.Message));
+            {                
+                Console.WriteLine($"{Properties.Resource.EC200} {ex.Message}");
             }
 
         }
@@ -92,8 +89,8 @@ namespace RunDD
                     df.Add(FileName);
                     netAnalyzer.AddDumpFiles(df, SymbolPath);
                     netAnalyzer.AddAnalysisRulesToRunList(AnalysisRulePath, false);
-                    netAnalyzer.RunAnalysisRules(null, SymbolPath, "", ReportingPath, AnalysisModes.Unattended);
-
+                    netAnalyzer.RunAnalysisRules(null, SymbolPath, "", ReportingPath, AnalysisModes.Unattended);                    
+                    
                     while (!netAnalyzer.ReportReady)
                         System.Threading.Thread.Sleep(1000);
 
@@ -107,7 +104,7 @@ namespace RunDD
                 catch (Exception ex)
                 {
                     Console.SetOut(o);
-                    Console.WriteLine(string.Format("ERROR : {0} ", Properties.Resource.EC201, ex.Message));
+                    Console.WriteLine($"{Properties.Resource.EC201} {ex.Message}");
                 }
             }
 

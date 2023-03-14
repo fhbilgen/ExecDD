@@ -117,10 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="EC001" xml:space="preserve">
+    <value>RunDD v1.0 Run DebugDiag</value>
+  </data>
+  <data name="EC002" xml:space="preserve">
+    <value>Command line application to invoke the DebugDiag Analysis utility</value>
+  </data>
+  <data name="EC003" xml:space="preserve">
+    <value>Usage:</value>
+  </data>
+  <data name="EC004" xml:space="preserve">
+    <value>RunDD.exe &lt;-f&gt; | [-r] | [-s]</value>
+  </data>
+  <data name="EC005" xml:space="preserve">
+    <value>-f name and path of the dump file</value>
+  </data>
+  <data name="EC006" xml:space="preserve">
+    <value>-r name and path of the output report file.</value>
+  </data>
+  <data name="EC007" xml:space="preserve">
+    <value>   If not specified then the report will be generated in the folder of RunDD.exe</value>
+  </data>
+  <data name="EC008" xml:space="preserve">
+    <value>-s symbol path</value>
+  </data>
+  <data name="EC009" xml:space="preserve">
+    <value>   If not specified then the value of SymbolPath in RunDD.exe.config is used</value>
+  </data>
+  <data name="EC010" xml:space="preserve">
+    <value>RunDD.exe assumes that DebugDiag installation path is C:\Program Files\DebugDiag\</value>
+  </data>
+  <data name="EC011" xml:space="preserve">
+    <value>If not then please change the value of AnalysisRulePath in RunDD.exe.config file</value>
+  </data>
+  <data name="EC020" xml:space="preserve">
+    <value>The path to the dump file should be specified!</value>
+  </data>
+  <data name="EC021" xml:space="preserve">
+    <value>The report file path is empty. Using</value>
+  </data>
+  <data name="EC022" xml:space="preserve">
+    <value>The symbol file path is empty. Using</value>
+  </data>
   <data name="EC200" xml:space="preserve">
-    <value>AnalysisJob.StartJob(): Exception happened while starting to process a new job</value>
+    <value>ERROR: AnalysisJob.StartJob(): Exception happened while starting to process a new job</value>
   </data>
   <data name="EC201" xml:space="preserve">
-    <value>AnalysisJob.Analyze() : Exception happened while running the Analysis</value>
+    <value>ERROR: AnalysisJob.Analyze() : Exception happened while running the Analysis</value>
   </data>
 </root>

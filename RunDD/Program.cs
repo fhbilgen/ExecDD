@@ -24,20 +24,20 @@ namespace RunDD
         {
             if (String.IsNullOrEmpty(paths.filePath))
             {
-                Console.WriteLine($"The path to the dump file should be specified!");
+                Console.WriteLine($"{Properties.Resource.EC020}");
                 return null;
             }
 
             if (String.IsNullOrEmpty(paths.reportPath))
             {
-                Console.WriteLine($"The report file path is empty. Using {Environment.CurrentDirectory}");
+                Console.WriteLine($"{Properties.Resource.EC021} {Environment.CurrentDirectory}");
                 paths.reportPath = Environment.CurrentDirectory;
             }
 
             if (String.IsNullOrEmpty(paths.symbolPath))
             {
                 paths.symbolPath = ConfigurationManager.AppSettings["SymbolPath"].ToString();
-                Console.WriteLine($"The symbol file path is empty. Using {paths.symbolPath}");
+                Console.WriteLine($"{Properties.Resource.EC022} {paths.symbolPath}");
             }
 
             var strRulePath = ConfigurationManager.AppSettings["AnalysisRulePath"].ToString();
@@ -54,8 +54,22 @@ namespace RunDD
 
         private static void DisplayUsage()
         {
-            Console.WriteLine();
+            Console.WriteLine($"\n{Properties.Resource.EC001}");
+            Console.WriteLine($"{Properties.Resource.EC002}\n");
+            Console.WriteLine($"{Properties.Resource.EC003}\n");
+            Console.WriteLine($"{Properties.Resource.EC004}\n");
+            Console.WriteLine($"{Properties.Resource.EC005}\n");            
+            Console.WriteLine($"{Properties.Resource.EC006}");
+            Console.WriteLine($"{Properties.Resource.EC007}\n");
+            Console.WriteLine($"{Properties.Resource.EC008}");
+            Console.WriteLine($"{Properties.Resource.EC009}");
+            Console.WriteLine("\n\n");
 
+            Console.WriteLine($"{Properties.Resource.EC010}");
+            Console.WriteLine($"{Properties.Resource.EC011}\n");
+
+
+            Environment.Exit(0);
         }
 
         private static Paths ProcessArguments(string[] args)
@@ -76,10 +90,10 @@ namespace RunDD
                         symbolPath = args[i + 1];
                         break;
                     case "-h":
-                        DisplayUsage();
+                        DisplayUsage();                        
                         break;
                     case "-?":
-                        DisplayUsage();
+                        DisplayUsage();                        
                         break;
                     default:
                         break;

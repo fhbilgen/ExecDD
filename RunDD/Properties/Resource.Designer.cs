@@ -61,7 +61,133 @@ namespace RunDD.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AnalysisJob.StartJob(): Exception happened while starting to process a new job.
+        ///   Looks up a localized string similar to RunDD v1.0 Run DebugDiag.
+        /// </summary>
+        internal static string EC001 {
+            get {
+                return ResourceManager.GetString("EC001", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Command line application to invoke the DebugDiag Analysis utility.
+        /// </summary>
+        internal static string EC002 {
+            get {
+                return ResourceManager.GetString("EC002", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Usage:.
+        /// </summary>
+        internal static string EC003 {
+            get {
+                return ResourceManager.GetString("EC003", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RunDD.exe &lt;-f&gt; | [-r] | [-s].
+        /// </summary>
+        internal static string EC004 {
+            get {
+                return ResourceManager.GetString("EC004", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to -f name and path of the dump file.
+        /// </summary>
+        internal static string EC005 {
+            get {
+                return ResourceManager.GetString("EC005", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to -r name and path of the output report file..
+        /// </summary>
+        internal static string EC006 {
+            get {
+                return ResourceManager.GetString("EC006", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to    If not specified then the report will be generated in the folder of RunDD.exe.
+        /// </summary>
+        internal static string EC007 {
+            get {
+                return ResourceManager.GetString("EC007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to -s symbol path.
+        /// </summary>
+        internal static string EC008 {
+            get {
+                return ResourceManager.GetString("EC008", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to    If not specified then the value of SymbolPath in RunDD.exe.config is used.
+        /// </summary>
+        internal static string EC009 {
+            get {
+                return ResourceManager.GetString("EC009", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RunDD.exe assumes that DebugDiag installation path is C:\Program Files\DebugDiag\.
+        /// </summary>
+        internal static string EC010 {
+            get {
+                return ResourceManager.GetString("EC010", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If not then please change the value of AnalysisRulePath in RunDD.exe.config file.
+        /// </summary>
+        internal static string EC011 {
+            get {
+                return ResourceManager.GetString("EC011", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The path to the dump file should be specified!.
+        /// </summary>
+        internal static string EC020 {
+            get {
+                return ResourceManager.GetString("EC020", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The report file path is empty. Using.
+        /// </summary>
+        internal static string EC021 {
+            get {
+                return ResourceManager.GetString("EC021", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The symbol file path is empty. Using.
+        /// </summary>
+        internal static string EC022 {
+            get {
+                return ResourceManager.GetString("EC022", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ERROR: AnalysisJob.StartJob(): Exception happened while starting to process a new job.
         /// </summary>
         internal static string EC200 {
             get {
@@ -70,7 +196,7 @@ namespace RunDD.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AnalysisJob.Analyze() : Exception happened while running the Analysis.
+        ///   Looks up a localized string similar to ERROR: AnalysisJob.Analyze() : Exception happened while running the Analysis.
         /// </summary>
         internal static string EC201 {
             get {
